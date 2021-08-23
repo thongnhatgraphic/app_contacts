@@ -11,7 +11,8 @@ function App() {
     key={route.title}
     path={route.path}
     exact={ route.exact }
-    component={route.component}/>)
+    render = { (props) => <route.component { ...props }/> }/>
+    )
   }
   return (
     <div className="App">
