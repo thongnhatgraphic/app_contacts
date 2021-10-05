@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { Button } from 'antd'
 import { routes } from "../routes"
 
-function App() {
 
-  
+function App() {
 
 
   const _renderRouters = (routes) => {
@@ -14,8 +14,10 @@ function App() {
     render = { (props) => <route.component { ...props }/> }/>
     )
   }
+  
   return (
     <div className="App">
+
       <Router>
         <Switch>
           { _renderRouters(routes) }

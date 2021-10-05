@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-RegisterContainer.propTypes = {
+// RegisterContainer.propTypes = {
     
-};
+// };
 
 function RegisterContainer(props) {
     return (
